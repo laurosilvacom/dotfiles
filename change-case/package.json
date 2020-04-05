@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "change-case": "^4.1.1",
-    "command-line-args": "^5.1.1"
+    "command-line-args": "^5.1.1",
+    "title-case": "^3.0.2"
   }
 }
