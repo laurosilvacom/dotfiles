@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-
+# Sets hub to git command
 alias git="hub"
 alias zshconfig="code ~/.zshrc"
 
@@ -109,12 +109,19 @@ export NVM_DIR="/Users/laurosilvacom/.nvm"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# This is the default prompt
 PS1='✨ '
 
+# This load vscode propmt
 if [ "$VSC" = "LOL" ]; then
   PS1='\$ '
 fi
 
+# This function checks if a prohect has a name
+# This creates a new lesson project using the vanilla template
+# creates and pushes a new repo to github
+# Opens project in VS Code
+# runs npm install and npm start
 +vanilla(){
   if [ "$1" = "" ]
   then 
@@ -133,10 +140,14 @@ fi
   code . -g src/index.js
   npm start
 
-  echo project has been created 📦
+  echo Done ✨
 }
 
 
+# This function checks if a lesson has a name
+# It creates a new branch and pushes changes to github
+# It also generates markdown links to github and codesandbox
+# this lesson can also be called from inside VS Code via https://github.com/laurosilvacom/vscode-egghead-lesson
 +lesson(){
   if [ "$1" = "" ]
   then 
@@ -160,7 +171,35 @@ fi
   git commit -m "$(date)" --allow-empty
   git push --set-upstream origin "$slug"
 
-  echo lesson has been created 🙌
+  echo Done ✨
+}
+
++tutorial(){
+  if [ "$1" = "" ]
+  then 
+    echo Please name your tutorial 😅
+    return
+  fi
+
+  slug="$(change "$1")"
+
+  cd ~/Documents/clients/laurosilvacom/laurosilva.com/tutorials
+  mkdir "$slug"
+  cd "$slug"
+  mkdir images
+  touch $slug.mdx
+  echo "\n## $slug \n" >> $slug.mdx
+
+  git checkout -b "$slug"
+  git add .
+  git commit -m "Adding new tutorial: $slug" --allow-empty
+  git push --set-upstream origin "$slug"
+  
+  cd ~/Documents/clients/laurosilvacom/laurosilva.com
+  code .
+  
+  echo Done ✨
+
 }
 
 export PATH="$HOME/.rbenv/bin:$PATH"
