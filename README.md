@@ -1,5 +1,9 @@
 # My Dotfiles
 
+# Screencasting Notes
+
+https://github.com/laurosilvacom/ultra-advanced-yak-shaved-lesson-creation-process
+
 ## Powerlevel10k
 
 Set `ZSH_THEME=powerlevel10k/powerlevel10k` in your `~/.zshrc`.
