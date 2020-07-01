@@ -35,6 +35,12 @@ brew install nvm
 mkdir ~/.nvm
 ```
 
+```
+nvm install node
+nvm use node
+
+```
+
 ## VScode Config
 
 ```json
