@@ -1,19 +1,41 @@
 # My Dotfiles
 
-# Screencasting Notes
+## Screencasting Notes
 
 https://github.com/laurosilvacom/ultra-advanced-yak-shaved-lesson-creation-process
 
-## Powerlevel10k
+## Homebrew
 
-Set `ZSH_THEME=powerlevel10k/powerlevel10k` in your `~/.zshrc`.
-
-```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Main VScode Config
+```
+brew update
+```
+
+## Oh My Zsh 
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## Hyper
+
+Download: https://hyper.is
+
+```
+hyper i hyper-night-owl
+```
+## Node.js
+
+```
+brew install nvm
+```
+```
+mkdir ~/.nvm
+```
+
+## VScode Config
 
 ```json
 {
