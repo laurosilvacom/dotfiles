@@ -41,6 +41,31 @@ nvm use node
 
 ```
 
+# OS Settings
+
+Disable popup showing accented characters when holding down a key:
+
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
+Show path bar:
+
+```
+defaults write com.apple.finder ShowPathbar -bool true
+
+```
+
+## Keyboard
+
+Key Repeat -> Fast
+Delay Until Repeat -> Short
+Disable "Correct spelling automatically"
+Disable "Capitalize words automatically"
+Disable "Add period with double-space"
+Disable "Use smart quotes and dashes"
+
+
 ## VScode Config
 
 ```json

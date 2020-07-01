@@ -1,12 +1,12 @@
 {
-  "debug.console.fontSize": 14,
+  "debug.console.fontSize": 16,
   "editor.cursorWidth": 6,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.quickSuggestionsDelay": 30,
   "editor.tabSize": 2,
   "explorer.openEditors.visible": 0,
-  "markdown.preview.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
+  "markdown.preview.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
   "window.zoomLevel": 0,
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
@@ -34,6 +34,10 @@
   "vscode_custom_css.policy": true,
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
+  "prettier.semi": false,
+  "terminal.integrated.env.osx": {
+    "VSC": "LOL"
+  },
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -44,12 +48,25 @@
     "source.fixAll": true
   },
   "[markdown]": {
-    "editor.wordWrapColumn": 100,
+    "editor.wordWrapColumn": 80,
     "editor.wordWrap": "bounded"
   },
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
-  "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
-  "spellright.language": ["en"],
+  "[mdx]": {
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "bounded"
+  },
+  "prettier.disableLanguages": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "plaintext",
+    "mdx"
+  ],
+  "spellright.language": [
+    "en"
+  ],
   "spellright.parserByClass": {
     "mdx": {
       "parser": "markdown"
@@ -57,5 +74,19 @@
   },
   "vscode_custom_css.imports": [
     "file:///Users/laurosilvacom/Documents/laurosilvacom/utilities/dotfiles/code-custom.css"
-  ]
+  ],
+  "workbench.startupEditor": "newUntitledFile"
+  // egghead
+  /*
+    "editor.fontSize": 22,
+    "window.zoomLevel": -1,
+    "terminal.integrated.fontSize": 20,
+    "workbench.statusBar.visible": false,
+    "scm.diffDecorations": "none",
+    "editor.lineNumbers": "off",
+    "workbench.editor.showTabs": false,
+    "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false
+    */
+  // egghead
 }
