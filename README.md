@@ -72,86 +72,200 @@ Disable "Use smart quotes and dashes"
 
 ```json
 {
-  "debug.console.fontSize": 16,
-  "editor.cursorWidth": 6,
-  "editor.fontSize": 16,
-  "editor.quickSuggestionsDelay": 30,
-  "editor.tabSize": 2,
-  "explorer.openEditors.visible": 0,
-  "markdown.preview.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
-  "window.zoomLevel": 0,
-  "editor.cursorBlinking": "solid",
-  "editor.cursorStyle": "block",
-  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.matchBrackets": "never",
-  "editor.renderLineHighlight": "none",
-  "editor.renderWhitespace": "boundary",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "Dank Mono",
-  "workbench.colorTheme": "Night Owl",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "right",
-  "breadcrumbs.enabled": false,
-  "editor.folding": false,
-  "editor.fontLigatures": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.lightbulb.enabled": true,
+  "editor.fontFamily": "'Input Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": true,
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.showUnused": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": 400,
+  "editor.tabSize": 2,
+  "terminal.integrated.fontSize": 14,
+  "editor.hover.enabled": false,
+  "editor.renderWhitespace": "none",
   "editor.glyphMargin": false,
-  "editor.minimap.enabled": false,
-  "editor.minimap.renderCharacters": false,
-  "editor.parameterHints.enabled": false,
-  "editor.renderIndentGuides": false,
-  "editor.smoothScrolling": true,
-  "explorer.compactFolders": false,
-  "prettier.singleQuote": true,
-  "vscode_custom_css.policy": true,
-  "workbench.activityBar.visible": false,
-  "workbench.statusBar.visible": true,
-  "prettier.semi": false,
+  "editor.folding": false,
+  "files.exclude": {
+    ".next": true,
+    "**/.next": true,
+    "node_modules": true,
+    "USE_GITIGNORE": true
+  },
   "terminal.integrated.env.osx": {
     "VSC": "LOL"
   },
-  "[javascript]": {
-    "editor.formatOnSave": false
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.suggest.autoImports": true,
+  "javascript.validate.enable": true,
+  "search.exclude": {
+    "***/.next": true,
+    "**/.build": true,
+    "**/.gh-pages": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true
   },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
+  "errorLens.excludePatterns": ["**/*.{css}"],
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": false
   },
-  "[markdown]": {
-    "editor.wordWrapColumn": 80,
-    "editor.wordWrap": "bounded"
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "env": {
+      "browser": true,
+      "jest/globals": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-debugger": "off"
+    }
   },
-  "[mdx]": {
-    "editor.wordWrapColumn": 80,
-    "editor.wordWrap": "bounded"
-  },
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
-  "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
+  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.scrollback": 10000,
+  "explorer.openEditors.visible": 0,
+  "editor.lineNumbers": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": false,
+  "workbench.panel.defaultLocation": "left",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 10,
+  "debug.javascript.codelens.npmScripts": "never",
+  "breadcrumbs.enabled": false,
+  "npm.runSilent": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "window.zoomLevel": 0,
+  "editor.minimap.enabled": false,
   "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
   "spellright.parserByClass": {
     "mdx": {
       "parser": "markdown"
     }
   },
-  "vscode_custom_css.imports": [
-    "file:///Users/laurosilvacom/Documents/laurosilvacom/utilities/dotfiles/code-custom.css"
-  ],
-  "workbench.startupEditor": "newUntitledFile"
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.cursorSmoothCaretAnimation": false,
+  "editor.smoothScrolling": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.packageManager": "npm",
+  "npm.packageManager": "npm",
+  "prettier.bracketSpacing": false,
+  "prettier.proseWrap": "never",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.useEditorConfig": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "workbench.colorTheme": "Setih Night",
+  "editor.wordWrap": "bounded",
+  "editor.suggestSelection": "first",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "explorer.compactFolders": false
+
+  // livestream
+  /*
+  "window.zoomLevel": 0,
+  "editor.fontSize": 22,
+  "terminal.integrated.fontSize": 20,
+  "workbench.statusBar.visible": false,
+  "editor.cursorBlinking": "solid",
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  }
+  /**/
   // egghead
   /*
-    "editor.fontSize": 22,
-    "window.zoomLevel": -1,
-    "terminal.integrated.fontSize": 20,
-    "workbench.statusBar.visible": false,
-    "scm.diffDecorations": "none",
-    "editor.lineNumbers": "off",
-    "workbench.editor.showTabs": false,
-    "editor.quickSuggestions": false,
-    "editor.suggestOnTriggerCharacters": false
-    */
-  // egghead
+  "editor.fontSize": 20,
+  "terminal.integrated.fontSize": 15,
+  "scm.diffDecorations": "none",
+  "editor.lineNumbers": "off",
+  "workbench.editor.showTabs": false,
+  "workbench.statusBar.visible": false,
+  "editor.cursorBlinking": "solid",
+  "window.zoomLevel": -1,
+  "breadcrumbs.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false
+  /**/
+  // build react apps
+  /*
+  "editor.fontSize": 20,
+  "terminal.integrated.fontSize": 15,
+  "scm.diffDecorations": "none",
+  "workbench.statusBar.visible": false,
+  "editor.cursorBlinking": "solid",
+  "window.zoomLevel": -1,
+  "editor.parameterHints.enabled": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false
+  /**/
+  // workshop
+  /*
+  "editor.fontSize": 22,
+  "terminal.integrated.fontSize": 20,
+  "scm.diffDecorations": "none",
+  "workbench.statusBar.visible": false,
+  "editor.cursorBlinking": "solid",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Night Owl Light",
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+  /**/
+  // Talk
+  /*
+  "editor.fontSize": 22,
+  "terminal.integrated.fontSize": 20,
+  "scm.diffDecorations": "none",
+  "editor.lineNumbers": "off",
+  "workbench.statusBar.visible": false,
+  "editor.cursorBlinking": "solid",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Night Owl Light",
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.symbolPath": "off",
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+  /**/
 }
+
 ```
