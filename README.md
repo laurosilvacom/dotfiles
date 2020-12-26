@@ -20,13 +20,7 @@ brew update
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-## Hyper
 
-Download: https://hyper.is
-
-```
-hyper i hyper-night-owl
-```
 
 ## Node.js
 
