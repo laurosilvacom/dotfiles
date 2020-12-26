@@ -9,10 +9,11 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 18,
+    fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: 'Dank Mono, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily:
+      'Input Mono, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -21,7 +22,7 @@ module.exports = {
     fontWeightBold: 'bold',
 
     // line height as a relative unit
-    lineHeight: 1,
+    lineHeight: 1.2,
 
     // letter spacing as a relative unit
     letterSpacing: 0,
@@ -49,7 +50,7 @@ module.exports = {
     selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#000',
 
     // custom CSS to embed in the main window
     css: '',
@@ -77,18 +78,18 @@ module.exports = {
       red: '#C51E14',
       green: '#1DC121',
       yellow: '#C7C329',
-      blue: '#0A2FC4',
-      magenta: '#C839C5',
-      cyan: '#20C5C6',
-      white: '#C7C7C7',
-      lightBlack: '#686868',
-      lightRed: '#FD6F6B',
-      lightGreen: '#67F86F',
-      lightYellow: '#FFFA72',
-      lightBlue: '#6A76FB',
-      lightMagenta: '#FD7CFC',
-      lightCyan: '#68FDFE',
-      lightWhite: '#FFFFFF',
+      blue: '#1A9BFC',
+      magenta: '#885CFB',
+      cyan: '#1A9BFC',
+      white: '#666',
+      lightBlack: '#666',
+      lightRed: '#f6b',
+      lightGreen: '#98EC65',
+      lightYellow: '#FDA929',
+      lightBlue: '#1A9BFC',
+      lightMagenta: '#885CFB',
+      lightCyan: '#1A9BFC',
+      lightWhite: '#666',
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -146,7 +147,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-night-owl"],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
@@ -157,4 +158,5 @@ module.exports = {
     // Example
     // 'window:devtools': 'cmd+alt+o',
   },
-};
+}
+
